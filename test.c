@@ -1,10 +1,11 @@
 #include <sys/mman.h>
 #include <stdint.h>
+#include <stdio.h>
 
 #define CODE_SIZE 1000
 
 void Function(){
-
+    printf("Hello\n");
 }
 
 void Write(uint32_t data, uint8_t* code, int* pc){
